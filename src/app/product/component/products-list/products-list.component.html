@@ -1,5 +1,5 @@
 <div>
-  <table class="table table-dark">
+  <table class="table">
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -8,29 +8,29 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let product of products$ | async">
+      <tr *ngFor="let product of products$ | async" class="table__row">
         <td>{{ product.name }}</td>
         <td>{{ product.description }}</td>
         <td>
-          <button (click)="showUpdateForm(product)" class="btn btn-primary" style="margin: 5px">Update</button>
-          <button (click)="deleteProduct(product.id)" class="btn btn-danger" style="margin: 5px">Delete</button>
+          <button (click)="showUpdateForm(product)" class="button__edit">Edit</button>
+          <button (click)="deleteProduct(product.id)" class="button__delete">Delete</button>
         </td>
       </tr>
     </tbody>
   </table>
 
-  <div *ngIf="isUpdateActivated" style="margin-top: 50px; margin-left: 50px;">
-    <h4>Update Product</h4>
+  <div *ngIf="isUpdateActivated" class="update">
+    <h4>Edit Product</h4>
     <form (ngSubmit)="updateProduct(updateForm)" #updateForm="ngForm">
-      <div class="form-group">
-        <label for="name">Product Name</label>
-        <input type="text" id="name" name="name" class="form-control" required [(ngModel)]="productToBeUpdated.name" style="width: 400px" />
+      <div class="update__group">
+        <label for="name" class="update__name">Product Name</label>
+        <input type="text" id="name" name="name" class="update__control" required [(ngModel)]="productToBeUpdated.name" style="width: 400px" />
       </div>
-      <div class="form-group">
-        <label for="side">Description</label>
-        <input type="text" id="description" name="description" class="form-control" required [(ngModel)]="productToBeUpdated.description" style="width: 400px" />
+      <div class="update__group">
+        <label for="side" class="update__side">Description</label>
+        <input type="text" id="description" name="description" class="update__control" required [(ngModel)]="productToBeUpdated.description" style="width: 400px" />
       </div>
-      <button [disabled]="updateForm.invalid" class="btn btn-primary" type="submit">Update</button>
+      <button [disabled]="updateForm.invalid" class="update__button" type="submit">Update</button>
     </form>
   </div>
 </div>

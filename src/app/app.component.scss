@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  list-style-type: none;
+  margin: 0 10px 0 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  padding: 5px;
+  background-color: #009688;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}

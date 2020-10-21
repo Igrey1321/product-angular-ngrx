@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.table {}
+
+.button__edit {
+  background-color: orange;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button__delete {
+  background-color: red;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.table__row {
+  & td {
+    border-bottom: 1pt solid black;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.update {
+  margin-top: 50px;
+  margin-left: 50px;
+  h4 {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.update__group {
+  display: flex;
+  max-width: 600px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.update__control {
+  width: 400px;
+}
+
+.update__name,
+.update__side {
+  font-family: 'Roboto', sans-serif;
+}
+
+.update__button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+}

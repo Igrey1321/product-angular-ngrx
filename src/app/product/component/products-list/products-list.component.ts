@@ -11,7 +11,8 @@ import { Update } from '@ngrx/entity';
 
 @Component({
   selector: 'app-products-list',
-  templateUrl: './products-list.component.html'
+  templateUrl: './products-list.component.html',
+  styleUrls: ['./products-list.component.scss']
 })
 export class ProductsListComponent implements OnInit {
 

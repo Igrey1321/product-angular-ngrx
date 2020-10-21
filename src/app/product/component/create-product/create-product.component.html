@@ -1,11 +1,11 @@
 <form (ngSubmit)="onSubmit(createForm)" #createForm="ngForm">
-  <div class="form-group">
-    <label for="name">Product Name</label>
-    <input type="text" id="name" name="name" class="form-control" ngModel required style="width: 400px" />
+  <div class="form">
+    <label class="form__name" for="name">Product Name</label>
+    <input type="text" id="name" name="name" class="form__control" ngModel required/>
   </div>
-  <div class="form-group">
-    <label for="side">Description</label>
-    <input type="text" id="description" name="description" class="form-control" ngModel required style="width: 400px" />
+  <div class="form">
+    <label class="form__side" for="side">Description</label>
+    <input type="text" id="description" name="description" class="form__control" ngModel required/>
   </div>
-  <button [disabled]="createForm.invalid" class="btn btn-primary" type="submit">Create</button>
+  <button [disabled]="createForm.invalid" class="form__button" type="submit">Create</button>
 </form>
