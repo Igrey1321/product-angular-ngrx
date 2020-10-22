@@ -1,9 +1,14 @@
 {
   "products": [
     {
-      "id": "a83f12dd-fc80-452f-a780-528c9e2c86b8",
-      "name": "Moto",
-      "description": "Turbo"
+      "id": "82f7cfd0-9819-4d0f-a15e-2517e9c75bc7",
+      "name": "TV Stick",
+      "description": "Fire TV Stick 4K streaming device with Alexa built in, Dolby Vision, includes Alexa Voice Remote, latest release"
+    },
+    {
+      "id": "5d5748bb-d06e-416b-92c9-d470e42c61f8",
+      "name": "Fire TV Cube",
+      "description": "Hands-free streaming device with Alexa | 4K Ultra HD | 2019 release"
     }
   ]
 }
